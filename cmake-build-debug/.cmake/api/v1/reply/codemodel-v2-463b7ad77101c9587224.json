@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/hwanghyeongjin/CLionProjects/HW03-1/cmake-build-debug",
-		"source" : "/Users/hwanghyeongjin/CLionProjects/HW03-1"
+		"build" : "/Users/hwanghyeongjin/Documents/GitHub/HW03-1/cmake-build-debug",
+		"source" : "/Users/hwanghyeongjin/Documents/GitHub/HW03-1"
 	},
 	"version" : 
 	{
