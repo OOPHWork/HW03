@@ -10,14 +10,6 @@ public:
         scores = new int[size];
     }
     
-    Dept(const Dept& dept) {
-        this->size = dept.size;
-        scores = new int[size];
-        for(int i = 0; i < size; i++) {
-            scores[i] = dept.scores[i];
-        }
-    }
-
     ~Dept() {
         delete[] scores;
     }
@@ -38,7 +30,7 @@ public:
     }
 };
 
-int countPass(Dept dept) {
+int countPass(const Dept& dept) { // 복사 생성자 대신 참조로 전달
     int count = 0;
     for (int i = 0; i < dept.getSize(); i++) {
         if(dept.isOver60(i)) count++;
@@ -51,4 +43,5 @@ int main() {
     com.read();
     int n = countPass(com);
     cout << "60점 이상은 " << n << "명";
+    return 0;
 }
