@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//12-1번 문제
 class Dept {
     int size;
     int *scores;
